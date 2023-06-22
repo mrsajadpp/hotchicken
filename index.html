@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>Hot Chicken Kolathur - Thintry</title>
+    <meta name="description"
+        content="Welcome to Hot Chicken Kolathur! Indulge in the fiery flavors of our tantalizing hot chicken dishes that will set your taste buds ablaze. Located in the heart of Kolathur, our restaurant offers a unique culinary experience that combines the rich heritage of traditional Indian spices with a contemporary twist. From our perfectly spiced chicken drumsticks to our signature hot chicken sandwiches, every dish is meticulously crafted to satisfy even the most adventurous palates. Immerse yourself in the vibrant ambiance of our restaurant as you savor our mouthwatering creations. Whether you're a spice aficionado or seeking a culinary adventure, Hot Chicken Kolathur is the perfect destination to ignite your senses and experience the ultimate chicken delight.">
+    <meta name="keywords"
+        content="hot chiken, chiken, restaurant, thintry, kolathur, kerala, malappuram, alfaham, kurupathal">
+    <meta name="author" content="thintry">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .gallery {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+            max-width: 1200px;
+            margin: 10px auto;
+            padding: 0 10px;
+        }
+
+        .gallery__item {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery__item>img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .gallery__item--hor {
+            grid-column: span 2;
+        }
+
+        .gallery__item--vert {
+            grid-row: span 2;
+        }
+
+        .gallery__item--lg {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .content {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            backdrop-filter: blur(5px);
+        }
+        .content .main-cont {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+        .content .main-cont button {
+            width: 130px;
+            height: 60px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery__item gallery__item--hor">
+                <img src="https://i.postimg.cc/9fwnPqvg/maxresdefault.jpg" alt="alfam chicken">
+            </div>
+            <div class="gallery__item">
+                <img src="https://i.postimg.cc/L59DWqbp/maxresdefault-1.jpg" alt="shawarma">
+            </div>
+            <div class="gallery__item">
+                <img src="https://i.postimg.cc/PxxNFTQ7/1629449235421-PERI-PERI.jpg" alt="kuzhi mandhi">
+            </div>
+            <div class="gallery__item gallery__item--vert">
+                <img src="https://i.postimg.cc/9fwnPqvg/maxresdefault.jpg" alt="alfam chicken">
+            </div>
+            <div class="gallery__item gallery__item--lg">
+                <img src="https://i.postimg.cc/L59DWqbp/maxresdefault-1.jpg" alt="shawarma">
+            </div>
+            <div class="gallery__item">
+                <img src="https://i.postimg.cc/PxxNFTQ7/1629449235421-PERI-PERI.jpg" alt="kuzhi mandhi">
+            </div>
+            <div class="gallery__item">
+                <img src="https://i.postimg.cc/9fwnPqvg/maxresdefault.jpg" alt="alfam chicken">
+            </div>
+            <div class="gallery__item">
+                <img src="https://i.postimg.cc/L59DWqbp/maxresdefault-1.jpg" alt="shawarma">
+            </div>
+            <div class="gallery__item">
+                <img src="https://i.postimg.cc/PxxNFTQ7/1629449235421-PERI-PERI.jpg" alt="kuzhi mandhi">
+            </div>
+            <div class="gallery__item">
+                <img src="https://i.postimg.cc/9fwnPqvg/maxresdefault.jpg" alt="alfam chicken">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="main-cont">
+            <h1>Hot Chicken Kolathur</h1>
+            <p>Welcome to Hot Chicken Kolathur! Indulge in the fiery flavors of our tantalizing hot chicken dishes that
+                will set your taste buds ablaze. Located in the heart of Kolathur, our restaurant offers a unique
+                culinary experience that combines the rich heritage of traditional Indian spices with a contemporary
+                twist. From our perfectly spiced chicken drumsticks to our signature hot chicken sandwiches, every dish
+                is meticulously crafted to satisfy even the most adventurous palates. Immerse yourself in the vibrant
+                ambiance of our restaurant as you savor our mouthwatering creations. Whether you're a spice aficionado
+                or seeking a culinary adventure, Hot Chicken Kolathur is the perfect destination to ignite your senses
+                and experience the ultimate chicken delight.</p>
+            <button onclick="location.href = 'https://thintry.com/';">Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
